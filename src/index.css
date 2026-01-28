@@ -45,3 +45,18 @@ header > p {
 .status p {
   margin: 5px;
 }
+
+.language-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 350px;
+  font-size: .75rem;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.chips {
+  padding: 4.5px;
+  border-radius: 3px;
+}
