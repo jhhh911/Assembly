@@ -1,9 +1,11 @@
-function App() {
+import React from "react"
+
+export default function Hangman() {
 
   return (
-    <>
-    </>
+    <main>
+      Game goes here
+    </main>
   )
 }
 
-export default App
