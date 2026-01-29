@@ -1,7 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import { languages } from "./languages";
 
 export default function Hangman() {
+  const [currentWord, setCurrentWord] = useState("react");
+
   const languageList = languages.map(language => {
     const styles = {
       backgroundColor: language.backgroundColor,
@@ -13,6 +15,11 @@ export default function Hangman() {
       </div>
     );
   });
+
+  const letterElements = [...currentWord.toUpperCase()].map((letter, i) => {
+    return <span className="letter-elements" key={i}>{letter}</span>;
+  });
+
   return (
     <main>
       <header>
@@ -28,6 +35,7 @@ export default function Hangman() {
         <p>Well done! 🎉</p>
       </section>
       <section className="language-chips">{languageList}</section>
+      <section className="word">{letterElements}</section>
     </main>
   );
 }

@@ -60,3 +60,20 @@ header > p {
   padding: 4.5px;
   border-radius: 3px;
 }
+
+.word {
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.25em;
+}
+
+.letter-elements {
+  padding: 12px;
+  border-bottom: 1px solid #f9f4da;
+  margin: 0 2px;
+  background-color: #323232;
+  color: #f9f4da;
+  font-size: 1.125rem;
+}
