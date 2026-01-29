@@ -13,6 +13,14 @@ body {
   justify-content: center;
 }
 
+button {
+  cursor: pointer;
+}
+
+main {
+  max-width: 594px;
+}
+
 header {
   text-align: center;
 }
@@ -70,10 +78,41 @@ header > p {
 }
 
 .letter-elements {
-  padding: 12px;
+  padding: 12.5px;
   border-bottom: 1px solid #f9f4da;
   margin: 0 2px;
   background-color: #323232;
   color: #f9f4da;
   font-size: 1.125rem;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 450px;
+  margin-top: 4em;
+  margin-bottom: 2.25em;
+}
+
+.letter-guess {
+  height: 35px;
+  width: 35px;
+  background-color: #fcba29;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.new-game {
+  background-color: #11b5e5;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  width: 225px;
+  height: 40px;
+  padding: 6px 12px;
+  display: block;
+  margin-inline: auto;
 }

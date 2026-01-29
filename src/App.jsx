@@ -20,6 +20,12 @@ export default function Hangman() {
     return <span className="letter-elements" key={i}>{letter}</span>;
   });
 
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+  const keyboardElements = [...alphabet.toUpperCase()].map(letter => {
+    return <button className="letter-guess" key={letter}>{letter}</button>
+  })
+
   return (
     <main>
       <header>
@@ -36,6 +42,8 @@ export default function Hangman() {
       </section>
       <section className="language-chips">{languageList}</section>
       <section className="word">{letterElements}</section>
+      <section className="keyboard">{keyboardElements}</section>
+      <button className="new-game">New Game</button>
     </main>
   );
 }
